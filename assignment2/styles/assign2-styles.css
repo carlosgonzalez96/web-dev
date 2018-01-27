@@ -1,0 +1,122 @@
+*{
+  padding: 0px;
+  margin: 0px
+}
+body{
+  background: url(../images/bg.jpg);
+}
+header{
+  width: 100%;
+  height: 100px;
+  background: url(../images/headerpic.png);
+  background-size: 100%;
+}
+nav{
+  width: 700px;
+  height: auto;
+  margin: auto;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+nav li{
+  width: 150px;
+  margin-top: 20px;
+  display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 1.3em;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+nav a:hover{
+  color: #00c434;
+}
+
+@media screen and (max-width: 700px) {
+  nav{
+    width: auto;
+  }
+  nav li{
+    width: auto;
+    display: block;
+    margin: auto auto 5px auto;
+  }
+}
+
+#container{
+  border: 1px solid #00c434;
+  border-top: 0px;
+  background: rgba(225,225,225,0.1);
+  box-shadow: 5px 5px 10px #000;
+  width: 75%;
+  margin: auto;
+  padding: 5px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top:60px;
+}
+h1{
+  color: #00c434;
+  font-family: arial;
+}
+#info img{
+  width: 400px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  float: left;
+  border: 1px solid #00c434;
+  box-shadow: 5px 5px 10px #000;
+}
+#info p{
+  text-indent: 50px;
+  color: white;
+  font-size: 1.3em;
+  font-family: verdana;
+}
+#specs{
+  clear: both;
+}
+#specs ul{
+  list-style-type: none;
+  margin-left: 20px;
+  color: white;
+  font-family: verdana;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #00c434;
+  font-family: arial;
+}
+.icon{
+  background: url('../images/icon.png') no-repeat left top;
+  background-size: 15px;
+  padding-left: 20px;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: url(../images/headerpic.png);
+  background-size: 100%;
+  overflow: hidden;
+  text-align: center;
+  color:white;
+  font-family: verdana;
+  line-height: 50px;
+  text-shadow: 0px 0px 10px #000;
+  }

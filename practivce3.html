@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>basic html page for cs 290</title>
+    
+    <script>
+        function areaCode(){
+            var areaCodePattern= /^[0-9]{3}$/;
+            var areaCode= document.getElementById("area_code").value;
+            if(areaCodePattern.test(areaCode)) alert("Good!")
+            else alert("You dont know what is an area code??");
+        }
+        function lfNames(){
+            var lname = document.getElementById("lname").value;
+            if(lname == " "){
+                alert("Please fill in you last name");
+            }
+        }
+        function programCode(){
+           areaCode();
+           lfNames();
+            
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <form name="practice" action="#" method="post" onsubmit="return programCode()">
+        <fieldset><legend>Form Practice</legend>
+            <label>First Name: <input type="text" name="fname" id="fname" value="" placeholder="firstname"></label>
+            <label>Last Name: <input type="text" name="lname" id="lname" value="" placeholder="lastname"></label>
+            <label>Sex:</label>&nbsp;&nbsp;
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">&nbsp;&nbsp;
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">&nbsp;&nbsp;
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <br/>
+            <label>Phone Area Code: <input type="text" id="area_code" name="area_code"placeholder="541"</label>
+            <br/>
+            </label>
+        </fieldset>
+        <input type="submit" />
+    </form>
+</body>
+</html>

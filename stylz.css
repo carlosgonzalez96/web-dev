@@ -1,0 +1,20 @@
+*{margin: 0px; padding: 0px;}
+figure{
+    
+    margin-right: 10px;
+}
+figure img{
+text-align: center;}
+p{
+    margin-bottom: 20px;
+}
+header,nav{
+    text-align: center;
+}
+nav{
+background: goldenrod;
+}
+footer{
+    clear: both;
+    text-align: center;
+}
