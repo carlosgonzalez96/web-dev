@@ -2,8 +2,14 @@
   padding: 0px;
   margin: 0px
 }
+html {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body{
-  background: url(../images/bg.jpg);
   position: relative;
 }
 header{
@@ -74,6 +80,7 @@ nav li:hover .sub1{
   background: rgba(225,225,225,0.1);
   box-shadow: 5px 5px 10px #000;
   width: 75%;
+  height: 1200px;
   margin: auto;
   padding: 5px;
   position: absolute;
@@ -127,24 +134,36 @@ h2{
   color: #00c434;
   font-family: arial;
 }
-h4, h2{
+h4{
   display: inline-block;
   color: #00c434;
   font-family: arial;
   cursor: pointer;
 }
+h4:hover{
+  color: white;
+}
 #tile-wrapper{
   width:50%;
   margin: 0px auto;
-  background: red;
   overflow: hidden;
 }
 .tiles{
   width: 150px;
   height: 150px;
-  background: blue;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+  border-radius: 10px;
   float: left;
   margin: 15px;
+}
+.close-icon{
+  float: right;
+  cursor: pointer;
+}
+.tile-img{
+  width: 100px;
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 footer{

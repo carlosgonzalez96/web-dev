@@ -57,20 +57,14 @@ function apearTwo() {
 }
 
 //todo tiles
-function closeBox() {
-  var x = document.getElementById("tile1");
-  var y = document.getElementById("tile2");
-  var z = document.getElementById("tile3");
-  if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function closeBox(tile) {
+  var x = document.getElementById(tile);
+  x.style.display = "none";
 }//end of closeBox function
 
 //button for clearAll
 function clearAll() {
-  var div = ['tile1','tile2','tile3','tile4','tile5']
+  var div = ['tile1','tile2','tile3','tile4','tile5', 'tile6','tile7','tile8','tile9','tile10']
   var i = 0;
   for (i; i < div.length; i++) {
     document.getElementById(div[i]).style.display="none";
@@ -79,7 +73,7 @@ function clearAll() {
 
 //button for resetAll
 function resetAll() {
-  var div = ['tile1','tile2','tile3','tile4','tile5']
+  var div = ['tile1','tile2','tile3','tile4','tile5', 'tile6','tile7','tile8','tile9','tile10']
   var i = 0;
   for (i; i < div.length; i++) {
     document.getElementById(div[i]).style.display="block";
