@@ -83,10 +83,10 @@ nav li:hover .sub1{
   height: 1200px;
   margin: auto;
   padding: 5px;
-  position: absolute;
+  position: relative;
   right: 0px;
   left: 0px;
-  top:60px;
+  top:-40px;
 }
 h1{
   color: #00c434;
@@ -167,7 +167,7 @@ h4:hover{
 }
 
 footer{
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
