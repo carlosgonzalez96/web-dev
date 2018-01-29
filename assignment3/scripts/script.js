@@ -16,7 +16,7 @@ function changeImg() {
 }
 window.onload = changeImg;
 //paragraph modification
-function updateFirstText(){
+function updateFirstText() {
   var textareaOne = document.getElementById('textarea1');
   var paraOne = document.getElementById('des');
   var buttonOne = document.getElementById('buttonOne');
@@ -36,7 +36,7 @@ function apearOne() {
   buttonOne.style.display="block";
 }
 
-function updateSecondText(){
+function updateSecondText() {
   var textareaTwo = document.getElementById('textarea2');
   var paraTwo = document.getElementById('des-two');
   var buttonTwo = document.getElementById('buttonTwo');
