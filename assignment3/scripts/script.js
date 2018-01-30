@@ -4,6 +4,7 @@ var time = 3000; //3 seconds
 images[0] = 'images/1080ti.jpg';
 images[2] = 'images/1080ti3.jpg';
 images[1] = 'images/1080ti2.jpg';
+images[3] = 'images/1080ti4.jpg';
 
 function changeImg() {
   document.slide.src = images[i];
