@@ -1,0 +1,187 @@
+*{
+  padding: 0px;
+  margin: 0px
+}
+html {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  position: relative;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background: url(../images/headerpic.png);
+  background-size: 100%;
+}
+nav{
+  width: 700px;
+  height: auto;
+  margin: auto;
+}
+nav ul, .sub1{
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+nav li{
+  width: 150px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 1.3em;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+nav a:hover{
+  color: #00c434;
+}
+.sub1{
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  background: #000;
+  border: 1px solid #00c434;
+  border-top: 0px;
+  z-index: 999;
+}
+nav li .sub1{
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  nav{
+    width: auto;
+  }
+  nav li{
+    width: auto;
+    display: block;
+    margin: auto auto 5px auto;
+  }
+  .sub1, nav li:hover .sub1{
+    display: none;
+  }
+}
+
+#container{
+  border: 1px solid #00c434;
+  border-top: 0px;
+  background: rgba(225,225,225,0.1);
+  box-shadow: 5px 5px 10px #000;
+  width: 75%;
+  height: 1200px;
+  margin: auto;
+  padding: 5px;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  top:-40px;
+}
+h1{
+  color: #00c434;
+  font-family: arial;
+}
+.prezi-content{
+  float: left;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  border: 1px solid #00c434;
+  box-shadow: 5px 5px 10px #000;
+}
+.prezi-content img{
+  border-radius: 20px;
+}
+
+#info p{
+  text-indent: 50px;
+  color: white;
+  font-size: 1.3em;
+  font-family: verdana;
+}
+/*****************************/
+#textarea1{
+  display: none;
+}
+#buttonOne{
+  display: none;
+}
+#textarea2{
+  display: none;
+}
+#buttonTwo{
+  display: none;
+}
+
+/********CSS For Tiles********/
+#tile-container{
+  clear: both;
+}
+h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #00c434;
+  font-family: arial;
+}
+h4{
+  display: inline-block;
+  color: #00c434;
+  font-family: arial;
+  cursor: pointer;
+  margin-right: 20px;
+}
+h4:hover{
+  color: white;
+}
+#tile-wrapper{
+  width:75%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.tiles{
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+  border-radius: 10px;
+  float: left;
+  margin: 15px;
+}
+.close-icon{
+  float: right;
+  cursor: pointer;
+  width: 15px;
+  height: 10px;
+}
+.tile-img{
+  width: 50px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  height: 40px;
+  background: url(../images/headerpic.png);
+  background-size: 100%;
+  overflow: hidden;
+  text-align: center;
+  color:white;
+  font-family: verdana;
+  line-height: 40px;
+  text-shadow: 0px 0px 10px #000;
+  }
