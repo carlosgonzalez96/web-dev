@@ -94,6 +94,9 @@ h1{
 }
 .prezi-content{
   float: left;
+  position: relative;
+  width: 400px;
+  height: 234px;
   border-radius: 20px;
   margin-right: 20px;
   margin-bottom: 5px;
@@ -102,6 +105,9 @@ h1{
 }
 .prezi-content img{
   border-radius: 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 #info p{
