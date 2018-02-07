@@ -1,7 +1,8 @@
-*{
+* {
   padding: 0px;
   margin: 0px
 }
+
 html {
   background: url(../images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -9,45 +10,53 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-body{
+
+body {
   position: relative;
 }
-header{
+
+header {
   width: 100%;
   height: 100px;
   background: url(../images/headerpic.png);
   background-size: 100%;
 }
-nav{
+
+nav {
   width: 700px;
   height: auto;
   margin: auto;
 }
-nav ul, .sub1{
+
+nav ul, .sub1 {
   list-style-type: none;
   padding: 0px;
   text-align: center;
 }
-nav li{
+
+nav li {
   width: 150px;
   margin-top: 20px;
   display: inline-block;
   position: relative;
 }
-nav a{
-    text-decoration: none;
-    color: white;
-    font-family: arial;
-    font-weight: bolder;
-    font-size: 1.3em;
-    display: block;
-    padding-left: 5px;
-    padding-right: 5px;
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: 1.3em;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-nav a:hover{
+
+nav a:hover {
   color: #00c434;
 }
-.sub1{
+
+.sub1 {
   display: none;
   position: absolute;
   top: 25px;
@@ -57,27 +66,29 @@ nav a:hover{
   border-top: 0px;
   z-index: 999;
 }
-nav li .sub1{
+
+nav li .sub1 {
   display: none;
 }
+
 @media screen and (max-width: 700px) {
-  nav{
+  nav {
     width: auto;
   }
-  nav li{
+  nav li {
     width: auto;
     display: block;
     margin: auto auto 5px auto;
   }
-  .sub1, nav li:hover .sub1{
+  .sub1, nav li:hover .sub1 {
     display: none;
   }
 }
 
-#container{
+#container {
   border: 1px solid #00c434;
   border-top: 0px;
-  background: rgba(225,225,225,0.1);
+  background: rgba(225, 225, 225, 0.1);
   box-shadow: 5px 5px 10px #000;
   width: 75%;
   height: 1200px;
@@ -86,13 +97,15 @@ nav li .sub1{
   position: relative;
   right: 0px;
   left: 0px;
-  top:-40px;
+  top: -40px;
 }
-h1{
+
+h1 {
   color: #00c434;
   font-family: arial;
 }
-.prezi-content{
+
+.prezi-content {
   float: left;
   position: relative;
   width: 400px;
@@ -103,59 +116,71 @@ h1{
   border: 1px solid #00c434;
   box-shadow: 5px 5px 10px #000;
 }
-.prezi-content img{
+
+.prezi-content img {
   border-radius: 20px;
   position: absolute;
   left: 0px;
   top: 0px;
 }
 
-#info p{
+#info p {
   text-indent: 50px;
   color: white;
   font-size: 1.3em;
   font-family: verdana;
 }
+
 /*****************************/
-#textarea1{
+
+#textarea1 {
   display: none;
 }
-#buttonOne{
+
+#buttonOne {
   display: none;
 }
-#textarea2{
+
+#textarea2 {
   display: none;
 }
-#buttonTwo{
+
+#buttonTwo {
   display: none;
 }
 
 /********CSS For Tiles********/
-#tile-container{
+
+#tile-container {
   clear: both;
 }
-h2{
+
+h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #00c434;
   font-family: arial;
 }
-h4{
+
+h4 {
   display: inline-block;
   color: #00c434;
   font-family: arial;
   cursor: pointer;
   margin-right: 20px;
 }
-h4:hover{
+
+h4:hover {
   color: white;
 }
-#tile-wrapper{
-  width:75%;
+
+#tile-wrapper {
+  width: 75%;
   margin: 0px auto;
   overflow: hidden;
 }
-.tiles{
+
+.tiles {
   width: 100px;
   height: 100px;
   background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
@@ -163,19 +188,21 @@ h4:hover{
   float: left;
   margin: 15px;
 }
-.close-icon{
+
+.close-icon {
   float: right;
   cursor: pointer;
   width: 15px;
   height: 10px;
 }
-.tile-img{
+
+.tile-img {
   width: 50px;
   margin-left: 25px;
   margin-top: 25px;
 }
 
-footer{
+footer {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -186,8 +213,8 @@ footer{
   background-size: 100%;
   overflow: hidden;
   text-align: center;
-  color:white;
+  color: white;
   font-family: verdana;
   line-height: 40px;
   text-shadow: 0px 0px 10px #000;
-  }
+}
