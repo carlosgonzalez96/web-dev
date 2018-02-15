@@ -8,7 +8,7 @@ images[3] = 'images/1080ti4.jpg';
 
 function changeImg() {
   document.slide.src = images[i];
-  if(i<images.length - 1) {
+  if (i < images.length - 1) {
     i++
   } else {
     i = 0;
@@ -22,19 +22,19 @@ function updateFirstText() {
   var paraOne = document.getElementById('des');
   var buttonOne = document.getElementById('buttonOne');
   paraOne.innerHTML = textareaOne.value;
-  textareaOne.style.display="none";
-  buttonOne.style.display="none";
-  paraOne.style.display="block";
+  textareaOne.style.display = "none";
+  buttonOne.style.display = "none";
+  paraOne.style.display = "block";
 }
 
 function apearOne() {
   var textareaOne = document.getElementById('textarea1');
   var buttonOne = document.getElementById('buttonOne');
   var paraOne = document.getElementById('des');
-  textareaOne.style.display="block";
+  textareaOne.style.display = "block";
   textareaOne.value = paraOne.innerHTML;
-  paraOne.style.display="none";
-  buttonOne.style.display="block";
+  paraOne.style.display = "none";
+  buttonOne.style.display = "block";
 }
 /*
 function updateSecondText() {

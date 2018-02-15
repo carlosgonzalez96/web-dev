@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Assignment 3 | An exercise in CSS + Javascript </title>
-    <link rel="stylesheet" type="text/css" href="styles/assign3-styles.css">
-    <meta charset="utf-8">
-    <script src="scripts/script.js"></script>
+  <title>Assignment 3 | An exercise in CSS + Javascript </title>
+  <link rel="stylesheet" type="text/css" href="styles/assign3-styles.css">
+  <meta charset="utf-8">
+  <script src="scripts/script.js"></script>
 </head>
+
 <body>
   <header>
     <nav>
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">CAREERS</a>
-        <ul class="sub1">
-          <li><a href="#">Full-Time</a>
-          <li><a href="#">Internships</a>
-        </ul>
-      </li>
-      <li><a href="#">PRODUCTS</a>
-        <ul class="sub1">
-          <li><a href="#">GeForce GTX 1080</a>
-          <li><a href="#">GeForce GTX 1060</a>
-          <li><a href="#">GeForce GTX 980</a>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CAREERS</a>
+          <ul class="sub1">
+            <li><a href="#">Full-Time</a></li>
+            <li><a href="#">Internships</a></li>
+          </ul>
+        </li>
+        <li><a href="#">PRODUCTS</a>
+          <ul class="sub1">
+            <li><a href="#">GeForce GTX 1080</a></li>
+            <li><a href="#">GeForce GTX 1060</a></li>
+            <li><a href="#">GeForce GTX 980</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
   <div id="container">
-  <div id="content">
-    <h1>NVIDIA : GTX 1080TI</h1>
-    <div id="info">
-      <div class="prezi-content">
-        <img name="slide" width="400px" height="234px">
+    <div id="content">
+      <h1>NVIDIA : GTX 1080TI</h1>
+      <div id="info">
+        <div class="prezi-content">
+          <img name="slide" width="400px" height="234px">
+        </div>
+        <textarea id="textarea1" style="width:600px; height:100px;"></textarea>
+        <button type="button" id="buttonOne">Update</button>
+        <p id="des" class="des" ondblclick="apearOne()">The GeForce® GTX 1080 Ti is NVIDIA's new flagship gaming GPU, based on the NVIDIA Pascal™ architecture. The latest addition to the ultimate gaming platform, this card is packed with extreme gaming horsepower, next-gen 11 Gbps GDDR5X memory, and
+          a massive 11 GB frame buffer. #GameReady.</p>
+        <textarea id="textarea2" style="width:600px; height:100px;"></textarea>
+        <button type="button" id="buttonTwo" onclick="updateSecondText()">Update</button>
+        <p id="des-two" class="des-two" ondblclick="apearTwo()">The GeForce GTX 1080 Ti Founders Edition is truly unique. Designed and built by NVIDIA. Crafted with premium materials and components, including a die-cast aluminum body and 7-phase dualFET power supply. And cooled by a radial fan with an advanced
+          vapor chamber designed for consistent performance in even the most thermally challenging environments. yeaa</p>
       </div>
-      <textarea id="textarea1" style="width:600px; height:100px;"></textarea>
-      <button type="button" id="buttonOne">Update</button>
-      <p id="des" class="des" ondblclick="apearOne()">The GeForce® GTX 1080 Ti is NVIDIA's new flagship gaming GPU, based on the NVIDIA Pascal™
-        architecture. The latest addition to the ultimate gaming platform,
-        this card is packed with extreme gaming horsepower, next-gen 11 Gbps GDDR5X memory, and a massive 11 GB frame buffer. #GameReady.</p>
-      <textarea id="textarea2" style="width:600px; height:100px;"></textarea>
-      <button type="button" id="buttonTwo" onclick="updateSecondText()">Update</button>
-      <p id="des-two" class="des-two" ondblclick="apearTwo()">The GeForce GTX 1080 Ti Founders Edition is truly unique. Designed and built by NVIDIA.
-        Crafted with premium materials and components, including a die-cast aluminum body and 7-phase dualFET power supply. And cooled by a radial fan with an
-        advanced vapor chamber designed for consistent performance in even the most thermally challenging environments. yeaa</p>
-    </div>
-    <div id="tile-container">
-      <h2>Chameleon icons</h2>
-      <div id="control"><h4 onclick="resetAll()">RESET</h4>|</h2><h4 onclick="clearAll()">CLEAR</h4></div>
-      <div id="tile-wrapper">
-        <div id="tile1" class="tiles"><p class="close-icon" onclick="closeBox('tile1')">X</p><img src="images/icon.png" class="tile-img"></div>
-        <div id="tile2" class="tiles"><p class="close-icon" onclick="closeBox('tile2')">X</p><img src="images/icon2.png" class="tile-img"></div>
-        <div id="tile3" class="tiles"><p class="close-icon" onclick="closeBox('tile3')">X</p><img src="images/icon3.png" class="tile-img"></div>
-        <div id="tile4" class="tiles"><p class="close-icon" onclick="closeBox('tile4')">X</p><img src="images/icon4.png" class="tile-img"></div>
-        <div id="tile5" class="tiles"><p class="close-icon" onclick="closeBox('tile5')">X</p><img src="images/icon5.png" class="tile-img"></div>
-        <div id="tile6" class="tiles"><p class="close-icon" onclick="closeBox('tile6')">X</p><img src="images/icon6.png" class="tile-img"></div>
-        <div id="tile7" class="tiles"><p class="close-icon" onclick="closeBox('tile7')">X</p><img src="images/icon7.png" class="tile-img"></div>
-        <div id="tile8" class="tiles"><p class="close-icon" onclick="closeBox('tile8')">X</p><img src="images/icon8.png" class="tile-img"></div>
-        <div id="tile9" class="tiles"><p class="close-icon" onclick="closeBox('tile9')">X</p><img src="images/icon9.png" class="tile-img"></div>
-        <div id="tile10" class="tiles"><p class="close-icon" onclick="closeBox('tile10')">X</p><img src="images/icon10.png" class="tile-img"></div>
+      <div id="tile-container">
+        <h2>Chameleon icons</h2>
+        <div id="control">
+          <h4 onclick="resetAll()">RESET</h4>
+          |
+          <h4 onclick="clearAll()">CLEAR</h4></div>
+        <div id="tile-wrapper">
+          <div id="tile1" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile1')">X</p><img src="images/icon.png" class="tile-img"></div>
+          <div id="tile2" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile2')">X</p><img src="images/icon2.png" class="tile-img"></div>
+          <div id="tile3" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile3')">X</p><img src="images/icon3.png" class="tile-img"></div>
+          <div id="tile4" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile4')">X</p><img src="images/icon4.png" class="tile-img"></div>
+          <div id="tile5" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile5')">X</p><img src="images/icon5.png" class="tile-img"></div>
+          <div id="tile6" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile6')">X</p><img src="images/icon6.png" class="tile-img"></div>
+          <div id="tile7" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile7')">X</p><img src="images/icon7.png" class="tile-img"></div>
+          <div id="tile8" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile8')">X</p><img src="images/icon8.png" class="tile-img"></div>
+          <div id="tile9" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile9')">X</p><img src="images/icon9.png" class="tile-img"></div>
+          <div id="tile10" class="tiles">
+            <p class="close-icon" onclick="closeBox('tile10')">X</p><img src="images/icon10.png" class="tile-img"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<footer>
-  <h3>Created by Carlos Gonzalez & Bryce Graves for assignment 3</h3>
-</footer>
+  <footer>
+    <h3>Created by Carlos Gonzalez & Bryce Graves for assignment 3</h3>
+  </footer>
 </body>
+
 </html>

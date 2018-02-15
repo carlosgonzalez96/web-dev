@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('#des-two').html($('#textarea2').val());
     $('#des-two').css("display", "block");
   });
-  
+
   //code for anything related to tiles
   $('#resetAll').on('click', function() {
     $(".tiles").css('display', 'block');
