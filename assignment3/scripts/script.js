@@ -1,26 +1,23 @@
 var i = 0;
-var images = [];
+var images = [ "images/1080ti.jpg", "images/1080ti2.jpg", "images/1080ti3.jpg", "images/1080ti4.jpg" ];
 var time = 3000; //3 seconds
-images[0] = 'images/1080ti.jpg';
-images[2] = 'images/1080ti3.jpg';
-images[1] = 'images/1080ti2.jpg';
-images[3] = 'images/1080ti4.jpg';
 
 function changeImg() {
-  document.slide.src = images[i];
-  if (i < images.length - 1) {
-    i++
+  document.slide.src = images[ i ];
+  if ( i < images.length - 1 ) {
+    ++i;
   } else {
     i = 0;
   }
-  setTimeout("changeImg()", time);
+  setTimeout( "changeImg()", time );
 }
 window.onload = changeImg;
-//paragraph modification
+
+//Paragraph modification
 function updateFirstText() {
-  var textareaOne = document.getElementById('textarea1');
-  var paraOne = document.getElementById('des');
-  var buttonOne = document.getElementById('buttonOne');
+  var textareaOne = document.getElementById( "textarea1" );
+  var paraOne = document.getElementById( "des" );
+  var buttonOne = document.getElementById( "buttonOne" );
   paraOne.innerHTML = textareaOne.value;
   textareaOne.style.display = "none";
   buttonOne.style.display = "none";
@@ -28,14 +25,15 @@ function updateFirstText() {
 }
 
 function apearOne() {
-  var textareaOne = document.getElementById('textarea1');
-  var buttonOne = document.getElementById('buttonOne');
-  var paraOne = document.getElementById('des');
+  var textareaOne = document.getElementById( "textarea1" );
+  var buttonOne = document.getElementById( "buttonOne" );
+  var paraOne = document.getElementById( "des" );
   textareaOne.style.display = "block";
   textareaOne.value = paraOne.innerHTML;
   paraOne.style.display = "none";
   buttonOne.style.display = "block";
 }
+
 /*
 function updateSecondText() {
   var textareaTwo = document.getElementById('textarea2');

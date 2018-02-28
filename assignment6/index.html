@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Jeopardy</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/app.module.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body ng-app="myjeopardy" ng-controller="myCtrl">
+  <div id="landing">
+    <h1>Welcome to Jeopardy</h1>
+    <form id="gameSetup">
+      <fieldset>
+        <p>Select upto Five Categories</p>
+        <label><input type="checkbox" id="c1"  value="html">HTML</label>
+        <label><input type="checkbox" id="c2"  value="css">CSS</label>
+        <label><input type="checkbox" id="c3"  value="javascript">javascript</label>
+        <label><input type="checkbox" id="c4"  value="jquery">JQuery</label>
+        <label><input type="checkbox" id="c5"  value="node">NodeJS</label>
+        <label><input type="checkbox" id="c6" value="mongo">Mongo</label>
+        <label><input type="checkbox" id="c7"  value="experiments">Experiments</label>
+        <label><input type="checkbox" id="c8"  value="surveys">Surveys</label>
+        <label><input type="checkbox" id="c9"  value="quantitative">Quantitative</label>
+        <label><input type="checkbox" id="c10"  value="random">Random</label>
+        <label><input type="checkbox" id="c11"  value="qualitative">Qualitative</label>
+        <label><input type="checkbox" id="c12" checked value="361-midterm-litreview">Lit Review</label>
+        <label><input type="checkbox" id="c13" checked value="361-midterm-ethics">Ethics</label>
+        <label><input type="checkbox" id="c14" checked value="361-midterm-measurement">Measurement</label>
+        <label><input type="checkbox" id="c15" checked value="361-midterm-sampling">Sampling</label>
+        <label><input type="checkbox" id="c16" checked value="361-midterm-design">Design</label>
+
+
+      </fieldset>
+      <fieldset>
+        <p>Enter upto four team names</p>
+        <label>Team 1: <input type="text"  ng-model="ngteams[0]" id="cteam1" required placeholder="Team 1"></label> <br/>
+        <label>Team 2: <input type="text"  ng-model="ngteams[1]" id="cteam2" required placeholder="Team 2"></label> <br/>
+        <label>Team 3: <input type="text" id="cteam3" ng-model="ngteams[2]"></label> <br/>
+        <label>Team 4: <input type="text" id="cteam4" ng-model="ngteams[3]"></label> <br/></fieldset>
+      <p style="text-align:right;display:block;"><input type="button" id="csubmit" value="NEXT>>" ng-click="getQuestions()"></p>
+    </form>
+
+
+  </div>
+  <div id="game" style="display:block">
+    <div style="width:80%;margin: auto;">
+      <table id="gametable">
+        <tr>
+          <th ng-repeat="cat in categories" style="width:20%;color:orange">
+            <h3>{{cat| uppercase}}</h3></th>
+        </tr>
+
+        <tr ng-repeat="i in [0,1,2,3,4]">
+          <td ng-repeat="cat in categories">
+            <h1 data-question="{{questions[cat][i].question}}" data-points="{{questions[cat][i].points}}" data-answer="{{questions[cat][i].answer}}">{{questions[cat][i].points}}</h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+  <div id="prompt" style="display:none">
+    <a href="javascript:void(0)" id="closebtn" class="closebtn">&#10008;</a>
+    <div id="promptQuestion">
+      <h1 id="ask"></h1>
+      <p style="text-align:center;"><a href="javascript:void(0)" style="font-weight:bold;color:white;background-color:black;" onclick="showAnswer()">Answer</a></p>
+      <h1 id="answer"></h1>
+      <div id="teamSelector" style="position: relative;">
+        <ul id="teamList" style="width:100%;">
+
+          <li id="{{team+$index}}" ng-repeat="team in ngteams" class="teamButton" ng-click="scoreFor($index)">
+            <h2>{{team}}</h2>
+            <h2 class="score">{{ngscore[$index]}}</h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- close prompt -->
+  <div id="results" style="display:none;">
+    <table id="scoreboard">
+      <tr>
+        <td ng-repeat="team in ngteams">
+          <h1>{{team}}:<span class="score">{{ngscore[$index]}}</span></h1>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

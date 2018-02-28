@@ -1,0 +1,127 @@
+#prompt {
+  height: 0%;
+  width: 80%;
+  margin-left: 10%;
+  /*margin: 10% 10% 10% 10%;*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /*background-color: rgb(60,60,200);
+    background-color: rgba(60,160,100, 0.9);*/
+  background: linear-gradient(to bottom, rgba(150, 202, 250, 0.86) 0%, rgba(143, 198, 249, 0.86) 7%, rgba(103, 176, 245, 0.92) 47%, rgba(49, 147, 239, 1) 100%);
+  transition: 0.5s;
+}
+
+#prompt .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.closebtn:hover, .closebtn:focus {
+  color: #f1f1f1;
+}
+
+#promptQuestion {
+  position: relative;
+  color: white;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#gametable {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  margin: auto;
+  height: 100%;
+}
+
+#gametable tr td {
+  text-align: center;
+  border: 2px solid black;
+}
+
+/*#gametable th {*/
+
+/*    width:20%;*/
+
+/*}*/
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #555555;
+}
+
+.teamButton {
+  display: inline-block;
+  width: 20%;
+  height: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  background: orange;
+  list-style-type: none;
+  text-align: center;
+}
+
+.teamButton h2 {
+  background: orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+#scoreboard {
+  width: 80%;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#scoreboard td {}
+
+#landing {
+  width: 80%;
+  padding-top: 15%;
+  margin: 0 auto;
+}
+
+#landing p {
+  font-size: 1.5em;
+}
+
+#landing input {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(150, 202, 250, 1) 0%, rgba(143, 198, 249, 0.86) 7%, rgba(103, 176, 245, 0.92) 47%, rgba(49, 147, 239, 1) 100%);
+}
+
+.animate-enter, .animate-leave {
+  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+}
+
+#gametable td.ng-enter {
+  transition: 1s ease-in;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+#gametable td.ng-enter-active {
+  opacity: 1;
+  transform: rotate(360deg);
+}
