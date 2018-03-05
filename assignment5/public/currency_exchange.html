@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylz.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="front-end-script.js"></script>
+	<script src="back-end-scripts.js"></script>
+	<title>Kitty Bank of Meowica</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1 class="title">Kitty Bank of Meowica</h1>
+		<div id="nav">
+			<div class="nav-shape" id="exchange-funds-tab" tabindex="1">
+				<p class="nav-word">Exchange Funds</p>
+			</div>
+			<div class="nav-shape" id="add-country-tab" tabindex="2">
+				<p class="nav-word">Add A Country</p>
+			</div>
+			<div class="nav-shape" id="update-country-tab" tabindex="3">
+				<p class="nav-word">Update Country</p>
+			</div>
+		</div>
+		<div id="form-container">
+			<div id="bkgOverlay"></div>
+			<form id="form-exchange">
+				<label for="source"><p class="labels">Current:</p>
+					<select id="exchange-first-country" class="dropdown" >
+						<option value="selected">-choose a country-</option>
+					</select>
+				</label>
+				<label for="To:"><p class="labels">New:</p>
+					<select id="exchange-second-country" class="dropdown">
+						<option value="selected">-choose a country-</option>
+					</select><br></label>
+				<label for="Amount"><p class="labels">Amount:</p><input type="text" id="amount-box"></label>
+				<button type="button" id="clear-form-exchange">Clear</button>
+				<button type="button" id="result-form">Result</button>
+				<div id="output-wrapper"><p></p></div>
+			</form>
+			<form id="form-add">
+				<div id="added-alert-box"><p>Country Has Been Added!</p></div>
+				<div id="added-alert-box-error"><p>This Country Is All Ready Added. Please Update Instead!</p></div>
+				<label for="Country"><p class="labels">Country:</p><input id="country-box" type="text"></label>
+				<label for="Notation"><p class="labels">Notation:</p><input id="notation-box" type="text"></label>
+				<label for="Currency"><p class="labels">Currency:</p><input id="currency-box" type="text"></label>
+				<label for="Comission"><p class="labels">Comission:</p><input id="comm-box" type="number"></label>
+				<label for="Rate"><p class="labels">Rate at 1USD:</p><input id="rate-box" type="number"></label>
+				<button type="button" id="clear-form-add">Clear</button>
+				<button type="button" id="add-country">Add Country</button>
+			</form>
+			<form id="form-update">
+				<div id="update-alert-box"><p>Country Has Been Updated!</p></div>
+				<label for="source"><p class="labels">Country:</p>
+					<select id="country-to-update" class="dropdown">
+						<option value="selected">-choose a country-</option>
+					</select></label>
+				<label for="Notation"><p class="labels">Notation:</p><input id="update-notation-box"type="text"></label>
+				<label for="Currency"><p class="labels">Currency:</p><input id="update-currency-box" type="text"></label>
+				<label for="Comission"><p class="labels">Comission:</p><input id="update-commission-box" type="number"></label>
+				<label for="Rate"><p class="labels">Rate at 1USD:</p><input id="update-rate-box" type="number"></label>
+				<button type="button" id="clear-form-update">Clear</button>
+				<button type="button" id="save-country">Update Country</button>
+			</form>
+			<div id="cate"></div>
+			<div id="cash"></div>
+		</div>
+	</div>
+	<footer class="footer">
+		<h5>Website created by Carlos Gonzalez and Bryce Graves</h5>
+	</footer>
+</body>
+
+</html>
